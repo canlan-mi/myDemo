@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>数据可视化</title>       
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <!-- <div class="box"></div> -->
+
+        <!-- 头部的盒子 -->
+        <header>
+            <h1>数据可视化-Echarts</h1>
+            <div class="showTime"></div>
+            <script>
+                var t=null;
+                t=setTimeout(time,1000);  //开始运行
+                function time(){
+                    clearTimeout(t);//清除定时器
+                    dt= new Date();
+                    var y=dt.getFullYear();
+                    var mt=dt.getMonth()+1;
+                    var day=dt.getDate();
+                    var h=dt.getHours();
+                    var m=dt.getMinutes();
+                    var s=dt.getSeconds();
+                    document.querySelector(".showTime").innerHTML="当前时间："+ y + "年" + mt + "月" + day + "日-" + h + "时" + m + "分" + s + "秒";
+                    t=setTimeout(time,1000);
+                }
+            </script>
+            
+            <!-- 页面主体盒子 -->
+            <section class="mainbox">
+                <div class="column"><!--1  -->
+                    <div class="panel bar">
+                        <h2>柱状图</h2>
+                        <div class="chart"></div>                    
+                    </div>
+                    <div class="panel-footer"></div>
+                    <div class="panel bar">
+                        <h2>2</h2>
+                        <div class="chart"></div>
+                    </div>
+                    <div class="panel-footer"></div>
+                    <div class="panel bar">
+                        <h2>2</h2>
+                        <div class="chart"></div>
+                    </div>
+                    <div class="panel-footer"></div>
+                </div>
+
+
+
+
+                <div class="column"><!--2  -->
+                    <!-- 数字模块盒子 -->
+                    <div class="number">
+                        <div class="number-hd">
+                            <ul>
+                                <li>909999</li>
+                                <li>123123</li>
+                            </ul>
+                        </div>
+                        <div class="number-bd">
+                            <ul>
+                                <li>study</li>
+                                <li>learn</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 地图模块盒子 -->
+                    <div class="map">
+                        <div class="map1"></div>
+                        <div class="map2"></div>
+                        <div class="map3"></div>
+                        <div class="chart1"></div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="column"><!--3  -->
+                    <div class="panel bar">
+                        <h2>2</h2>
+                        <div class="chart"></div>
+                    </div>
+                    <div class="panel-footer"></div>
+                    <div class="panel-footer"></div>
+                    <div class="panel bar">
+                        <h2>2</h2>
+                        <div class="chart"></div>
+                    </div>
+                    <div class="panel-footer"></div>
+                    <div class="panel-footer"></div>
+                    <div class="panel bar">
+                        <h2>2</h2>
+                        <div class="chart"></div>
+                    </div>
+                    <div class="panel-footer"></div>
+                </div>
+            </section>
+            </header>
+        <script src="js/flexible.js"></script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .box{
+                width: 600px;
+                height: 300px;
+                background-color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+        <script src="js/echarts.min.js"></script>
+        <script>
+            //echarts.init(dom容器)
+            var mychart=echarts.init(document.querySelector(".box"));
+            var option={
+                title:{
+                    text:"Echarts 入门示例"
+                },
+                tooltip:{
+                    // trigger:"axis"
+                },
+                legend:{
+                    data:["数量"]
+                },
+                xAxis:{
+                    data:["倾角计","位移绳","位移计","智能传感","水位计","沉降仪"]
+                },
+                yAxis:{},
+                series:[{
+                    name:"数量",
+                    type:"bar",
+                    data:[5,20,36,10,10,20]
+                }]
+            };
+            mychart.setOption(option);
+        </script>
+    </body>
+</html>

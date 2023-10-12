@@ -108,7 +108,6 @@ header .mainbox h2 {
 }
 header .mainbox .chart {
   height: 3rem;
-  background-color: pink;
 }
 .number {
   position: relative;
@@ -196,6 +195,14 @@ header .mainbox .chart {
   animation: rotate1 15s linear infinite;
   opacity: 0.6;
   background-size: 100% 100%;
+}
+.map .chart1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: pink;
+  width: 100%;
+  height: 10.125rem;
 }
 @keyframes rotate1 {
   form {

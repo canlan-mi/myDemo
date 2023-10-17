@@ -5,6 +5,12 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>数据可视化</title>       
         <link rel="stylesheet" href="css/index.css">
+        <script src="js/jquery.js"></script>
+        <style>
+            .active {
+            color: red; /* 定义选中状态下的颜色，可以根据需要自行更改 */
+        }
+        </style>
     </head>
     <body>
         <!-- <div class="box"></div> -->
@@ -39,12 +45,15 @@
                     </div>
                     <div class="panel-footer"></div>
                     <div class="panel bar1">
-                        <h2>2</h2>
+                        <h2>传感器数量统计（折线图）
+                            <a class="a1" href="javascript:;"></a>
+                            <a  class="a2 active" href="javascript:;"></a>
+                        </h2>
                         <div class="chart"></div>
                     </div>
                     <div class="panel-footer"></div>
                     <div class="panel bar2">
-                        <h2>2</h2>
+                        <h2>设备占比展示</h2>
                         <div class="chart"></div>
                     </div>
                     <div class="panel-footer"></div>
@@ -58,8 +67,8 @@
                     <div class="number">
                         <div class="number-hd">
                             <ul>
-                                <li>909999</li>
-                                <li>123123</li>
+                                <li>000199</li>
+                                <li>000223</li>
                             </ul>
                         </div>
                         <div class="number-bd">
@@ -84,19 +93,19 @@
 
                 <div class="column"><!--3  -->
                     <div class="panel bar3">
-                        <h2>正常设备统计</h2>
+                        <h2>设备百分比统计图</h2>
                         <div class="chart"></div>
                     </div>
                     <div class="panel-footer"></div>
                     <div class="panel-footer"></div>
                     <div class="panel bar4">
-                        <h2>2</h2>
+                        <h2>月数据堆积图（倾斜）</h2>
                         <div class="chart"></div>
                     </div>
                     <div class="panel-footer"></div>
                     <div class="panel-footer"></div>
                     <div class="panel bar5">
-                        <h2>2</h2>
+                        <h2>玫瑰图</h2>
                         <div class="chart"></div>
                     </div>
                     <div class="panel-footer"></div>
@@ -105,6 +114,8 @@
             </header>
         <script src="js/flexible.js"></script>
         <script src="js/echarts.min.js"></script>
+        <script src="js/china.js"></script>
         <script src="js/index.js"></script>
+        
     </body>
 </html>
